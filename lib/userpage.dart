@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:idute_app/models/user_list.dart';
 import 'package:idute_app/widgets/main_drawer.dart';
 import 'package:idute_app/widgets/menu_button.dart';
+import 'package:idute_app/widgets/search_delegate.dart';
 import 'package:idute_app/widgets/user_tile.dart';
 
 class UserPage extends StatefulWidget {
@@ -42,7 +43,9 @@ class _UserPageState extends State<UserPage> {
           ),
           IconButton(
             icon: const Icon(Icons.search),
-            onPressed: () {},
+            onPressed: () {
+              showSearch(context: context, delegate: SearchUserDelegate());
+            },
           ),
         ],
       ),

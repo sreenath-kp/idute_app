@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:idute_app/bloc/auth_bloc/auth_bloc.dart';
+import 'package:idute_app/bloc/search_bloc/search_bloc.dart';
 import 'package:idute_app/homepage.dart';
 import 'package:idute_app/loginpage.dart';
 import 'package:idute_app/userpage.dart';
@@ -14,8 +15,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => AuthBloc(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => AuthBloc(),
+        ),
+        BlocProvider(
+          create: (context) => SearchBloc(),
+        ),
+      ],
       child: MaterialApp(debugShowCheckedModeBanner: false, routes: {
         '/': (context) => const LoginPage(),
         '/home': (context) => const HomePage(),
