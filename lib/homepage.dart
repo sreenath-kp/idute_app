@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:idute_app/widgets/main_drawer.dart';
+import 'package:idute_app/widgets/menu_button.dart';
 
 import 'widgets/homepage_card.dart';
 
@@ -13,19 +14,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(
-                Icons.menu,
-                size: 36,
-              ), // Change the icon here
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-            );
-          },
-        ),
+        leading: MenuButton(context: context),
       ),
       body: Padding(
         padding: const EdgeInsets.all(36.0),

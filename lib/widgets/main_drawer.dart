@@ -14,11 +14,11 @@ class MainDrawer extends StatelessWidget {
           color: Colors.white70,
           width: 1,
         ),
-        child: const Padding(
-          padding: EdgeInsets.symmetric(vertical: 20.0),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 20.0),
           child: Column(
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(vertical: 28),
                 child: Text(
                   'IDUTE',
@@ -33,35 +33,51 @@ class MainDrawer extends StatelessWidget {
               MyDrawerButton(
                 title: "Home",
                 icon: Icons.home_rounded,
+                route: "/",
+                context: context,
               ),
               MyDrawerButton(
                 title: "Users",
                 icon: Icons.group,
+                route: "/users",
+                context: context,
               ),
               MyDrawerButton(
                 title: "MVI",
                 icon: Icons.lightbulb,
+                route: "/",
+                context: context,
               ),
               MyDrawerButton(
                 title: "Join Startup",
                 icon: Icons.rocket_launch_rounded,
+                route: "/",
+                context: context,
               ),
               MyDrawerButton(
                 title: "Report",
                 icon: Icons.report_rounded,
+                route: "/",
+                context: context,
               ),
               MyDrawerButton(
                 title: "Help",
                 icon: Icons.help_rounded,
+                route: "/",
+                context: context,
               ),
               MyDrawerButton(
                 title: "App Suggestions",
                 icon: Icons.lightbulb,
+                route: "/",
+                context: context,
               ),
-              Spacer(),
+              const Spacer(),
               MyDrawerButton(
                 title: "Logout",
                 icon: Icons.logout,
+                route: "/login",
+                context: context,
               ),
             ],
           ),
