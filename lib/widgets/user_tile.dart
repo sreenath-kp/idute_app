@@ -40,32 +40,34 @@ class UserTile extends StatelessWidget {
                 backgroundImage: NetworkImage(imageUrl),
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  username,
-                  style: const TextStyle(
-                    fontFamily: 'inter',
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
+            SizedBox(
+              width: 100,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    username,
+                    style: const TextStyle(
+                      fontFamily: 'inter',
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 5),
-                Text(
-                  field,
-                  style: const TextStyle(
-                    fontFamily: 'inter',
-                    color: Colors.grey,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
+                  const SizedBox(height: 5),
+                  Text(
+                    field,
+                    style: const TextStyle(
+                      fontFamily: 'inter',
+                      color: Colors.grey,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            const Spacer(),
             const VerticalDivider(
               color: Colors.white,
               thickness: 1,

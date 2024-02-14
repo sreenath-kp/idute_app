@@ -36,7 +36,9 @@ class _LoginPageState extends State<LoginPage> {
         builder: (context, state) {
           if (state is AuthLoading) {
             return const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(
+                color: Colors.white,
+              ),
             );
           }
           return Column(
