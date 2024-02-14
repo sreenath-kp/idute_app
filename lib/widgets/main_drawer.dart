@@ -33,7 +33,7 @@ class MainDrawer extends StatelessWidget {
               MyDrawerButton(
                 title: "Home",
                 icon: Icons.home_rounded,
-                route: "/",
+                route: "/home",
                 context: context,
               ),
               MyDrawerButton(
@@ -45,38 +45,38 @@ class MainDrawer extends StatelessWidget {
               MyDrawerButton(
                 title: "MVI",
                 icon: Icons.lightbulb,
-                route: "/",
+                route: "/home",
                 context: context,
               ),
               MyDrawerButton(
                 title: "Join Startup",
                 icon: Icons.rocket_launch_rounded,
-                route: "/",
+                route: "/home",
                 context: context,
               ),
               MyDrawerButton(
                 title: "Report",
                 icon: Icons.report_rounded,
-                route: "/",
+                route: "/home",
                 context: context,
               ),
               MyDrawerButton(
                 title: "Help",
                 icon: Icons.help_rounded,
-                route: "/",
+                route: "/home",
                 context: context,
               ),
               MyDrawerButton(
                 title: "App Suggestions",
                 icon: Icons.lightbulb,
-                route: "/",
+                route: "/home",
                 context: context,
               ),
               const Spacer(),
               MyDrawerButton(
                 title: "Logout",
                 icon: Icons.logout,
-                route: "/login",
+                route: "/",
                 context: context,
               ),
             ],
