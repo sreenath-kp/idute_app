@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:idute_app/bloc/auth_bloc.dart';
+import 'package:idute_app/bloc/auth_bloc/auth_bloc.dart';
 import 'package:idute_app/homepage.dart';
 import 'package:idute_app/loginpage.dart';
 import 'package:idute_app/userpage.dart';
