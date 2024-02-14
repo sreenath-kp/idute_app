@@ -11,7 +11,7 @@ class SearchBloc extends Bloc<SearchBlocEvent, SearchBlocState> {
     on<SearchRequested>((event, emit) {
       List<User> searchedUsers = [];
       for (var user in users) {
-        if (user.username.contains(event.query)) {
+        if (user.username.toLowerCase().contains(event.query.toLowerCase())) {
           searchedUsers.add(user);
         }
       }
