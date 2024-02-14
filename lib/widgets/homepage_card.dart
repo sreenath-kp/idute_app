@@ -1,31 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class HomePageCard extends StatelessWidget {
-//   const HomePageCard({
-//     super.key,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       decoration: BoxDecoration(
-//         color: Colors.white,
-//         borderRadius: BorderRadius.circular(10),
-//       ),
-//       child: const Center(
-//         child: Text(
-//           'IDUTE',
-//           style: TextStyle(
-//             fontFamily: 'inter',
-//             color: Colors.black,
-//             fontSize: 20,
-//             fontWeight: FontWeight.w300,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
 import 'package:flutter/material.dart';
 
 class HomePageCard extends StatelessWidget {
